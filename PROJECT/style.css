@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+/* CSS dành cho các thiết bị có chiều rộng tối đa là 320px */
+@media screen (max-width: 320px) {
+}
+/* CSS dành cho các thiết bị có chiều rộng tối thiểu là 1200px */
+@media screen (min-width: 1200px) {
+}
+/* CSS dành cho các thiết bị có chiều rộng từ 768px đến 1199px */
+@media screen (min-width: 768px) and (max-width: 1199px) {
+}
+  /* CSS dành cho các thiết bị có chiều rộng tối đa là 767px */
+@media screen (max-width: 767px) {
+}
+#header-top{
+    background-color: #FFF60B;
+    text-align: center;
+}
+/* ---------------------header-sum---------------------- */
+#header-sum{
+    background-color: black;
+    max-width: 100%;
+    margin: auto;
+}
+#header-sum>.header-child1>ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+.header-child1>ul>li>a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+.header-child1>ul>li>a>:nth-child(2) i{
+    padding-left: 7px;
+}
+.header-child1>ul>li:nth-child(3){
+    position: relative;
+}
+.header-child1>ul>li:nth-child(3) input{
+    height: 30px; 
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.header-child1>ul>li:nth-child(3) input:focus {
+    outline: none;
+}
+.header-child1>ul>li:nth-child(3) i{
+    color: black;
+    position: absolute;
+    right: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    cursor:pointer;
+}
+.header-child1>ul>li:nth-child(3):hover i{
+    font-size: 22px;
+}
+.header-child1>ul>li:nth-child(4) button{
+    height: 50px;
+    padding: 7px 12px 7px 12px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #ffffff68;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.header-child1>ul>li:nth-child(4) button:hover{
+    background-color: rgba(255, 255, 255, 0.473);
+}
+.header-child1>ul>li:nth-child(5) button{
+height: 40px;
+padding: 7px 12px 7px 12px;
+background-color: black;
+color: white;
+cursor: pointer;
+border: 1px solid #ffffff68;
+font-size: 15px;
+border-radius: 5px;
+transition: all 0.3s ease;
+white-space: nowrap;
+display: flex;
+align-items: center;
+}
+.header-child1>ul>li:nth-child(5) button:hover{
+    background-color: rgba(255, 255, 255, 0.473);
+}
+.header-child1>ul>li:nth-child(5) i{
+    font-size: 22px;
+    margin-right: 5px;
+}
+.btn-content{
+position: relative;
+}
+.btn-top {
+position: absolute;
+left: -30%;
+transform: translate(-50%, -50%);
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #FFF60B;
+display: block;
+animation: burst 2s ease-out infinite;
+}
+@keyframes burst {
+0% {
+    transform: scale(0);
+    opacity: 0;
+}
+50% {
+    opacity: 1;
+}
+100% {
+    transform: scale(1);
+    opacity: 0;
+}
+}
+.header-child1>ul>li:nth-child(6) a:hover{
+    color: #FFF60B;
+}
+.header-child1>ul>li:nth-child(7) a:hover{
+    color: #FFF60B;
+}
+.header-child1>ul>li:nth-child(8) a:hover{
+    color: #FFF60B;
+}
+.header-child2>ul{
+    font-size: 18px;
+    white-space: nowrap;
+}
+.header-child2>ul{
+    display: flex;
+    list-style: none;
+    background-color: #FFD400;
+    justify-content: space-around;
+}
+.header-child2>ul>li{
+    height: 100%;
+    padding:15px;
+}
+.header-child2>ul>li:hover{
+    background-color: white;
+    transition: all 0.3s ease;
+}
+.header-child2>ul>li>a{
+    color: black;
+    text-decoration: none;
+}
+.header-child2>ul>li:nth-child(4){
+    position: relative;
+    z-index: 1;
+}
+/* submenu */
+.submenu > ul > li{
+    list-style-type: none;
+}
+.submenu > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.submenu2{
+    margin-left: 20px;
+}
+.submenu2 > ul > li{
+    list-style-type: none;
+}
+.submenu2 > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.submenu3{
+    margin-left: 20px;
+}
+.submenu3 > ul > li{
+    list-style-type: none;
+}
+.submenu3 > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+/* Mã css hover dropdown nội dung phụ kiện */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    left: 0;
+    top: 50px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    width: 800px;
+    height: auto;
+}
+.submenu li a:hover,.submenu2 li a:hover,.submenu3 li a:hover{
+    font-weight: bolder;
+}
+.menutong{
+    display: flex;
+}
+.menutong ul li a{
+    white-space: nowrap;
+}
+.submenu, .submenu2,.submenu3 {
+    flex: 1;
+  }
+.submenu li,.submenu2 li,.submenu3 li{
+    margin: 10px;
+}
+/* mã dropdown css máy in */
+.dropdown1{
+    position: relative;
+}
+.dropdown-content1{
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 50px;
+}
+.dropdown1:hover .dropdown-content1{
+    display: block;
+    width: 180px;
+    height: auto;
+    background-color: #fff;
+}
+.dropdown-content1>ul{
+    list-style: none;
+    padding: 10px;
+}
+.dropdown-content1{
+    white-space: nowrap;
+}
+.dropdown-content1>ul>li>a:hover{
+    font-weight: bolder;
+}
+.dropdown-content1>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.dropdown-content1>ul>li{
+    margin-bottom: 10px;
+}
+/* css dịch vụ tiện ích */
+.submenu4>ul>li,.submenu5>ul>li,.submenu6>ul>li{
+    list-style: none;
+}
+.submenu4>ul>li>a,.submenu5>ul>li>a,.submenu6>ul>li>a{
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+.submenu4>ul>li>a:hover,.submenu5>ul>li>a:hover,.submenu6>ul>li>a:hover{
+    font-weight: bolder;
+}
+.menutong2{
+    width: 700px;
+    height: auto;
+    display: flex;
+}
+.dropdown2{
+    position: relative;
+}
+.dropdown-content2{
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    left: -566.5px;
+    top: 50px;
+    padding: 20px;
+    right: 0;
+}
+.dropdown2:hover .dropdown-content2{
+    display: block;
+}
+.menutong2 ul li {
+    padding: 10px;
+}
+.menutong2 ul li a:hover{
+    font-weight: bolder;
+}
+.submenu4,.submenu5{
+    flex: 3;
+}
+.submenu6{
+    flex: 2;
+}
+/* -----------slideshow-------------------- */
+.chuaslide{
+    width: 100%;
+    height: 250px;
+}
+.slideshow-container {
+    width: 840px;
+    height: auto;
+    position: relative;
+    margin:0 auto;
+  }
+/* sua */
+  .slideshow-container .slide {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: -65px;
+  }
+/* sua */
+  .slideshow-container .slide img {
+    border-radius: 20px;
+    width: 870px;
+    height: 250px;
+  }
+  /* CSS cho nút di chuyển */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    padding: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+  }
+  .prev i, .next i{
+    font-size: 20px;
+  }
+  .prev:hover, .next:hover{
+    background-color: rgba(217, 255, 47, 0.63);
+    padding-left: 16px;
+  }
+  .prev:hover, .next:hover i{
+    color: red;
+    transition: all 0.3s ease-in-out;
+  }
+  .prev {
+    left: -3.3%;
+    top: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .next {
+    right: -7%;
+    top: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+/* -----------bottom-slide-------------- */
+.bottom-slide{
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: auto;
+}
+.bottom-slide>ul>li>a>img{
+    height: 58px;
+    width: 58px;
+}
+.bottom-slide>ul>li>a{
+    padding-bottom: 20px;
+}
+.bottom-slide>ul>li{
+    list-style: none;
+}
+.bottom-slide>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.bottom-slide>ul{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-slide>ul>li>a>p{
+    margin-left: 6px;
+    white-space: nowrap;
+}
+.bottom-slide>ul>li>a{
+    display: flex;
+    align-items: center;
+    padding:16px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.chuabottom-slide{
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -70px;
+}
+/* -------------bottom-bottom-slide------------ */
+.bottom-bottom-slide{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+/* ---------------product1---------------------------*/
+#product-one{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(146,1,1);
+    padding-bottom: 30px;
+}
+.product-one-content{
+    width: 100%;
+    height: auto;
+    padding-bottom: 12px;
+}
+.product-one-content-item-text{
+    list-style: none;
+}
+.product-one-content-img >img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.product-one-content-items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.product-one-content-item{
+  margin: 10px;
+  cursor: pointer;
+}
+.product-one-content-item-text>li:nth-child(1){
+  display: flex;
+  align-items: center;
+}
+.product-one-content-item{
+  width: 18.3%;
+  height: auto;
+  padding: 15px 10px 50px 10px;
+  background-color: #fff
+}
+.product-one-content-item{
+  background-image: url(images/khung1.webp);
+  background-repeat: no-repeat;
+  background-size: 220.59px 441.92px;
+}
+.product-one-content-item>img{
+  width: 100%;
+  height: auto;
+  padding: 20px 10px 20px 10px;
+  transition: all 0.3s ease;
+}
+.product-one-content-item:hover >img {
+  transform: translateY(-10px);
+}
+.product-one-content-item-text>li{
+  padding: 5px 10px;
+}
+.xemtrenmaytinh{
+  text-align: center;
+  margin-top: 50px;   
+}
+.xemtrenmaytinh button{
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.xemtrenmaytinh button:hover{
+  color: #ff380b;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 100px rgba(255, 255, 3, 0.882);
+}
